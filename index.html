@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/imgs/icon/Medea-icon.png" type="image/x-icon">
+    <title>Magic Battle</title>
+</head>
+<body>
+    <section id="game-area">
+        <div id="choose-fighter">
+            <h1>Choose Your Fight</h1>
+            <fieldset class="magics-options">
+                <legend>Choose Magic <img class="icon" src="./assets/imgs/icon/arrow.png"></legend>
+                <input type="radio" id="Mage" name="magic" value="Mage" checked>
+                <label for="Mage">
+                    <div class="fighter-icon">
+                        <img class="icon" src="./assets/imgs/icon/Mage-icon.png" alt="Mage Icon">
+                        <h2>Mage</h2>
+                    </div>
+                </label>
+                <input type="radio" id="Wanderer" name="magic" value="Wanderer">
+                <label for="Wanderer">
+                    <div class="fighter-icon">
+                        <img class="icon" src="./assets/imgs/icon/Wanderer-icon.png" alt="Wanderer Icon">
+                        <h2>Wanderer</h2>
+                    </div>
+                </label>
+            </fieldset>
+            <fieldset class="enemy-options">
+                <legend>Choose Enemy <img class="icon" src="./assets/imgs/icon/arrow.png"></legend>
+                <input type="radio" id="Medea" name="enemy" value="Medea" checked>
+                <label for="Medea">
+                    <div class="fighter-icon">
+                        <img class="icon" src="./assets/imgs/icon/Medea-icon.png" alt="Medea Icon">
+                        <h2>Medea</h2>
+                    </div>
+                </label>
+                <input type="radio" id="Ursula" name="enemy" value="Ursula">
+                <label for="Ursula">
+                    <div class="fighter-icon">
+                        <img class="icon" src="./assets/imgs/icon/Ursula-icon.png" alt="Ursula Icon">
+                        <h2>Ursula</h2>
+                    </div>
+                </label>
+            </fieldset>
+            <div class="choose-action">
+                <p>> Press <img src="./assets/imgs/keyboard/key-space.png"> to start or</p>
+                <button id="start">Iniciar a luta</button>
+            </div>
+        </div>
+        <div id="display">
+            <div id="fight-area">
+            <div id="magic">
+                <header>
+                    <div class="features">
+                        <div class="character-name">
+                            <img class="badge icon" src="./assets/imgs/icon/Mage-icon.png" alt="Wizard Icon">
+                            <p class="name">Wizard</p>
+                        </div>
+                        <div class="lifebar">
+                            <div class="bar" style="width: 100%;"></div>
+                        </div>
+                        <div class="skills">
+                            <img class="badge" src="./assets/imgs/icon/attack.png" alt="Attack Badge">
+                            <p class="attack">10</p>
+                            <img class="badge" src="./assets/imgs/icon/defense.png" alt="Defense Badge">
+                            <p class="defense">10</p>
+                            <img class="badge" src="./assets/imgs/icon/life.png" alt="Life Badge">
+                            <p class="max-life">100</p>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="img">
+                        <img class="character-image" src="./assets/imgs/character/Mage/Mage-idle.gif" alt="Warrior Image">
+                    </div>
+                </main>
+                <footer>
+                    <p>Press <img src="./assets/imgs/keyboard/key-ctrl.png"> to attack or</p>
+                    <button class="attack-button">ATTACK</button>
+                </footer>
+            </div>
+            <div id="enemy">
+                <header>
+                    <div class="features">
+                        <div class="character-name">
+                            <p class="name">Meduse</p>
+                            <img class="badge icon" src="./assets/imgs/icon/Medea-icon.png" alt="Enemy Icon">
+                        </div>
+                        <div class="lifebar">
+                            <div class="bar" style="width: 100%;"></div>
+                        </div>
+                        <div class="skills">
+                            <img class="badge" src="./assets/imgs/icon/attack.png" alt="Attack Badge">
+                            <p class="attack">10</p>
+                            <img class="badge" src="./assets/imgs/icon/defense.png" alt="Defense Badge">
+                            <p class="defense">10</p>
+                            <img class="badge" src="./assets/imgs/icon/life.png" alt="Life Badge">
+                            <p class="max-life">100</p>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <img class="character-image" src="./assets/imgs/character/Medea/Medea-idle.gif" alt="Enemy Image">
+                </main>
+                <footer>
+                    <p>Press <img src="./assets/imgs/keyboard/key-alt.png"> to attack or</p>
+                    <button class="attack-button">ATTACK</button>
+                </footer>
+            </div>
+            </div>
+            <div id="log">
+                <ul></ul>
+            </div>
+        </div>
+    </section>
+    <dialog id="who-win">
+        <div>
+            <img id="winnerIcon" src="./assets/imgs/icon/Ursula-icon.png" alt="Winner Icon">
+            <p id="winnerName">Winner WIN!</p>
+        </div>
+        <button id="closeWhoWin"><img src="./assets/imgs/keyboard/key-x.png" alt="Button X"></button>
+    </dialog>
+    <script src="./assets/js/class.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

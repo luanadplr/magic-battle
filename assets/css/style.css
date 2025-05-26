@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'monogram', monospace;
+    h1, p, li {
+        color: #fff;
+    }
+}
+
+@font-face {
+    font-family: 'monogram';
+    src: url('../font/monogram.ttf');
+}
+
+
+#game-area{
+    width: 400px;
+    height: 85vh;
+    margin: 10px auto;
+    padding: 32px;
+    border-radius: 10px;
+    background: #c271c9 url('../imgs/background.png') no-repeat center; 
+    background-size: cover;
+}
+
+/* CHOOSE YOU FIGHT DIV */
+
+h1{
+    font-weight: 400;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 2px 0 #000;
+    text-transform: uppercase;
+    margin: 20px 0;
+    background-color: #000000d1;
+    border: 2px ridge #c271c9;
+    box-shadow: 2px 2px 0 #000,
+    -1px -1px 0 #fff;
+}
+
+legend{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px 10px;
+    box-shadow: 2px 2px 0 #000;
+    display: flex; 
+    justify-content: space-between;
+    .icon{
+        width: 12px;
+    }
+}
+
+fieldset{
+    border: none;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    color: #fff;
+    cursor: pointer;
+    margin: 20px 10px;
+    text-align: center;
+    width: 100px;
+    padding: 15px;
+    .icon{
+        width: 50px;
+    }
+}
+
+h2{
+    font-weight: 500;
+    text-shadow: 1px 2px 0 #000;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    border: 2px ridge #c271c9;
+    background-color: #00000079;
+    box-shadow: 2px 2px 0 #000,
+    -1.5px -1px 0 #fff;
+}
+
+.choose-action{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: 2px 1.8px 0 #000;
+    img{
+        width: 30px;
+    }
+}
+
+#start{
+    margin-top: 10px;
+}
+
+/* FIGHT AREA */
+
+#display{
+    display: none;
+}
+
+#fight-area{
+    height: 350px;
+    border: 10px ridge #c271c9;
+    background-color: #00000051;
+    box-shadow: 2px 2px 0px #000;
+    padding: 10px 0;
+    display: flex;
+    p{
+        text-shadow: 1px 1px 0px #000000;
+    }
+}
+
+#magic,
+#enemy{
+    flex: 1;
+}
+
+/* HEADER - FIGHT AREA */
+
+.icon{
+    width: 30px;
+}
+
+.features{
+    padding-left: 5px;
+}
+
+.character-name{
+    display: flex;
+    align-items: center;
+    p{
+        font-size: 22px;
+        margin: 0 5px;
+    }
+}
+
+.lifebar{
+    height: 11px;
+    border: 2px solid #000;
+    background-color: #000026;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+    .bar{
+        height: 8px;
+        background-color: #b83838;
+        border-radius: 5px;
+    }
+}
+
+.skills{
+    display: flex;
+    .badge{
+        margin: 0 3px 0 3px;
+        width: 20px;
+    }
+}
+
+#enemy header{
+    padding-right: 5px;
+    .character-name{
+        justify-content: flex-end;
+    }
+}
+
+/* MAIN - FIGHT AREA */
+
+main{
+    height: 62%;
+}
+
+.character-image{
+    height: 130px;
+    margin: 50px 0;
+    position: absolute;
+}
+
+/* FOOTER - FIGHT AREA */
+
+footer{
+    background-color: #1e1e1e90;
+    padding: 5px;
+    border-left: thin dotted #fff;
+    border-right: thin dotted #fff;
+    text-align: center;
+    text-transform: uppercase;
+    p{
+        font-size: 16px;
+    }
+}
+
+button{
+    font-size: 15px;
+    margin: 3px 0;
+    padding: 2px 25px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 #000;
+}
+
+/* LOG */
+
+#log{
+    height: 200px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    padding: 5px 10px;
+    li{
+        list-style: none;
+    }
+}
+
+/* WHO-WIN */
+
+:modal{
+    width: 300px;
+    height: 100px;
+    margin: 65px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    #winnerName{
+        font-size: 20px;
+        color: #000;
+    }
+    #closeWhoWin{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 0 0 #000;
+    }
+}
