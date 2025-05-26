@@ -8,7 +8,8 @@ Um mini Jogo de luta com Javascript Puro.
 2. Atacar usando o botão e o teclado
 3. Mudança da vida em tempo real
 4. Contagem de defesa e ataque
-5. Modal anunciando o vencedor
+5. Animação dos personagens
+6. Modal anunciando o vencedor
 
 ## 🛡️ Tecnologias Utilizadas
 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="Javascript"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
@@ -16,3 +17,4 @@ Um mini Jogo de luta com Javascript Puro.
 > Projeto criado através dos ensinamentos do curso da [B7WEB](https://lp.b7web.com.br/curso).
 
 ## 🐍 JOGUE:
+[Magic Battle](https://luanadplr.github.io/magic-battle/)
