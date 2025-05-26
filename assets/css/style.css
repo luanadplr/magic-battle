@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'monogram', monospace;
-    h1, p, li {
-        color: #fff;
-    }
+}
+
+h1,
+p,
+li {
+    color: #fff;
 }
 
 @font-face {
@@ -52,9 +55,10 @@ legend{
     box-shadow: 2px 2px 0 #000;
     display: flex; 
     justify-content: space-between;
-    .icon{
-        width: 12px;
-    }
+}
+
+legend .icon{
+    width: 12px;
 }
 
 fieldset{
@@ -71,9 +75,10 @@ label{
     text-align: center;
     width: 100px;
     padding: 15px;
-    .icon{
-        width: 50px;
-    }
+}
+
+label .icon{
+    width: 50px;
 }
 
 h2{
@@ -97,9 +102,10 @@ input:checked + label{
     font-size: 25px;
     text-transform: uppercase;
     text-shadow: 2px 1.8px 0 #000;
-    img{
-        width: 30px;
-    }
+}
+
+.choose-action img{
+    width: 30px;
 }
 
 #start{
@@ -119,9 +125,10 @@ input:checked + label{
     box-shadow: 2px 2px 0px #000;
     padding: 10px 0;
     display: flex;
-    p{
-        text-shadow: 1px 1px 0px #000000;
-    }
+}
+
+#fight-area p{
+    text-shadow: 1px 1px 0px #000000;
 }
 
 #magic,
@@ -142,10 +149,11 @@ input:checked + label{
 .character-name{
     display: flex;
     align-items: center;
-    p{
-        font-size: 22px;
-        margin: 0 5px;
-    }
+}
+
+.character-name p{
+    font-size: 22px;
+    margin: 0 5px;
 }
 
 .lifebar{
@@ -154,26 +162,29 @@ input:checked + label{
     background-color: #000026;
     border-radius: 5px;
     margin: 5px 0 10px 0;
-    .bar{
-        height: 8px;
-        background-color: #b83838;
-        border-radius: 5px;
-    }
+}
+
+.bar{
+    height: 8px;
+    background-color: #b83838;
+    border-radius: 5px;
 }
 
 .skills{
     display: flex;
-    .badge{
-        margin: 0 3px 0 3px;
-        width: 20px;
-    }
+}
+
+.skills .badge{
+    margin: 0 3px 0 3px;
+    width: 20px;
 }
 
 #enemy header{
     padding-right: 5px;
-    .character-name{
-        justify-content: flex-end;
-    }
+}
+
+#enemy header .character-name{
+    justify-content: flex-end;
 }
 
 /* MAIN - FIGHT AREA */
@@ -197,9 +208,10 @@ footer{
     border-right: thin dotted #fff;
     text-align: center;
     text-transform: uppercase;
-    p{
-        font-size: 16px;
-    }
+}
+
+footer p{
+    font-size: 16px;
 }
 
 button{
@@ -219,9 +231,10 @@ button{
     margin-top: 10px;
     overflow-y: scroll;
     padding: 5px 10px;
-    li{
-        list-style: none;
-    }
+}
+
+li{
+    list-style: none;
 }
 
 /* WHO-WIN */
@@ -236,19 +249,22 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    div{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-    #winnerName{
-        font-size: 20px;
-        color: #000;
-    }
-    #closeWhoWin{
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        box-shadow: 0 0 0 #000;
-    }
+}
+
+:modal div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+:modal #winnerName{
+    font-size: 20px;
+    color: #000;
+}
+
+:modal #closeWhoWin{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 0 #000;
 }
