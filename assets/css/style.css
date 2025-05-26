@@ -239,7 +239,7 @@ li{
 
 /* WHO-WIN */
 
-:modal{
+#who-win{
     width: 300px;
     height: 100px;
     margin: 65px auto;
@@ -251,18 +251,18 @@ li{
     align-items: center;
 }
 
-:modal div{
+#who-win div{
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-:modal #winnerName{
+#who-win #winnerName{
     font-size: 20px;
     color: #000;
 }
 
-:modal #closeWhoWin{
+#who-win #closeWhoWin{
     background-color: transparent;
     border: none;
     cursor: pointer;
