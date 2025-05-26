@@ -180,9 +180,9 @@ class Stage{
 
         if(actualDefense < actualAttack){
             attacked.life -= actualAttack
-            this.log.addMessage(`⚔️ ${attacked.name} took ${actualAttack} damage.`)
+            this.log.addMessage(`⚔️ ${attacked.name} took ${actualAttack} damage`)
         } else {
-            this.log.addMessage(`🛡️ ${attacked.name} defended.`)
+            this.log.addMessage(`🛡️ ${attacked.name} defended`)
         }
 
         // CHANGE IMAGE
