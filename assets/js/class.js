@@ -70,8 +70,8 @@ class Stage{
     // UPDATE ALL NAMES & SKILLS
     update(){
 
-        const imgMagic = this.magicEl.querySelector('.character-img')
-        const imgEnemy = this.enemyEl.querySelector('.character-img')
+        const imgMagic = this.magicEl.querySelector('.character-image')
+        const imgEnemy = this.enemyEl.querySelector('.character-image')
 
         //MAGIC
         this.magicEl.querySelector('.icon')
@@ -122,7 +122,8 @@ class Stage{
                 this.doAttack(
                     this.enemy,
                     this.magic,
-                    this.enemyEl.querySelector('.character-image')
+                    imgEnemy,
+                    imgMagic
                 )
             } else if(event.key == 'Alt'){
                 this.enemyEl.querySelector('.character-image')
@@ -130,7 +131,8 @@ class Stage{
                 this.doAttack(
                     this.magic,
                     this.enemy,
-                    this.magicEl.querySelector('.character-image')
+                    imgMagic,
+                    imgEnemy
             )
             }
         })
