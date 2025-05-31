@@ -53,6 +53,24 @@ function startGame(){
     telaJogo.style.display = 'block'
 }
 
+function createGame(magic, enemy){
+    const stage = new Stage(
+        magic,
+        enemy,
+        document.querySelector('#magic'),
+        document.querySelector('#enemy'),
+        log
+    )
+
+    stage.update()
+    startGame()
+
+    document.querySelector('#closeWhoWin')
+        .addEventListener('click', ()=>{
+            stage.reset()
+        }) 
+}
+
 // ON KEYUP SPACE
 
 window.addEventListener('keyup', (event)=>{
@@ -61,22 +79,7 @@ window.addEventListener('keyup', (event)=>{
         getMagic(magicInputs)
         getEnemy(enemyInputs)
 
-        const stage = new Stage(
-            chooseMagic,
-            chooseEnemy,
-            document.querySelector('#magic'),
-            document.querySelector('#enemy'),
-            log
-        )
-        
-        stage.update()
-        startGame()
-        
-        // MODAL AREA
-        const reset = document.querySelector('#closeWhoWin')
-        reset.addEventListener('click', ()=>{
-            stage.reset()
-        })
+        createGame(chooseMagic, chooseEnemy)
     }
 })
 
@@ -87,20 +90,5 @@ btnStart.addEventListener('click', ()=>{
     getMagic(magicInputs)
     getEnemy(enemyInputs)
 
-    const stage = new Stage(
-        chooseMagic,
-        chooseEnemy,
-        document.querySelector('#magic'),
-        document.querySelector('#enemy'),
-        log
-    )
-    
-    stage.update()
-    startGame()
-    
-    // MODAL AREA
-    const reset = document.querySelector('#closeWhoWin')
-    reset.addEventListener('click', ()=>{
-        stage.reset()
-    })
+    createGame(chooseMagic, chooseEnemy)
 })
